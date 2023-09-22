@@ -55,17 +55,17 @@ def getting_cam_data():
 
 def read_data_from_cam():
     print('datacomming ja boy')
-    time.sleep(1)
     print('X=',x1,'Y=',y1,'W=',x2,'H=',y2)
 
 
 
 threading.Thread(target=getting_cam_data).start()
+time.sleep(2)
 print('jsem na startu') 
-time.sleep(2)  
+time.sleep(3)  
 print('jedu eskem')
 time.sleep(3) 
-print("dojel jsem na p") 
+print("dojel jsem na p")
 read_data_from_cam()
 
 
