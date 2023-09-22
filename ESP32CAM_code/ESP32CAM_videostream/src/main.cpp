@@ -20,6 +20,7 @@ void loop()
     if (number == 1){
         digitalWrite(LED_BUILTIN, HIGH);
         delay(2000);
+        Serial.println("69");
     }
     if (number == 2){
         digitalWrite(LED_BUILTIN, HIGH);
@@ -28,6 +29,7 @@ void loop()
         delay(1000);
          digitalWrite(LED_BUILTIN, HIGH);
         delay(1000);
+        Serial.println("69");
     }
     else{
             digitalWrite(LED_BUILTIN, LOW);
