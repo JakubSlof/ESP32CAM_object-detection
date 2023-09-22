@@ -54,19 +54,23 @@ def getting_cam_data():
 
 
 def read_data_from_cam():
+
     print('datacomming ja boy')
     print('X=',x1,'Y=',y1,'W=',x2,'H=',y2)
 
 
 
-threading.Thread(target=getting_cam_data).start()
+threading.Thread(target=getting_cam_data).start()#args=(5,) vstup do funkce ta carka tam musi bit 
 time.sleep(2)
 print('jsem na startu') 
 time.sleep(3)  
 print('jedu eskem')
 time.sleep(3) 
 print("dojel jsem na p")
+start_time = time.time() 
 read_data_from_cam()
+end_time = time.time()
+print('finished',end_time - start_time)
 
 
 
